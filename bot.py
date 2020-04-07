@@ -1,11 +1,5 @@
 from discord.ext import commands
-def read_token():
-    with open('token.txt', 'r') as f:
-        lines = f.readlines()
-        return lines[0].strip()
-
-token = read_token()
-
+import os
 client = commands.Bot(command_prefix = '%')
 CHNLCMND = 695252473509707846
 CHNLMSG = 697026084734238801
@@ -358,4 +352,5 @@ async def CreateTable(ctx):
                 f.write(str(message.id))
         else:
             await ctx.send('Вы не можете использовать эту команду')
+token = os.environ.get('token')
 client.run(token)
