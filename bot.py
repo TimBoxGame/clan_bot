@@ -1,7 +1,7 @@
 from discord.ext import commands
 import os
 client = commands.Bot(command_prefix = '%')
-CHNLCMND = 695252473509707846
+CHNLCMND = 697054436584849471
 CHNLMSG = 697026084734238801
 CHNLINFO = 697025872124706916
 KodyId = 569461495407312902
