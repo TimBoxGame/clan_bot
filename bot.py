@@ -353,4 +353,4 @@ async def CreateTable(ctx):
         else:
             await ctx.send('Вы не можете использовать эту команду')
 token = os.environ.get('token')
-client.run('Njk1NjMyNzU5MTE2NTI5Njk1.XoxdlQ.vmEIqBU9q_xSzd7DgJQszJzFXwk')
+client.run(token)
