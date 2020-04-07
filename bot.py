@@ -171,7 +171,7 @@ async def ChangeName(ctx, arg1, arg2):
                 SS[i] = int(SS[i])
             b = dict(zip(SS[0::2], SS[1::2]))
             b = {k: b[k] for k in sorted(b, key=b.get, reverse=True)}
-            msg = '```Лучшие кланы:```\n'
+            msg = '```Топ кланов:```\n'
             for i in range(int(len(SS)) // 2):
                 msg += f'``{str(i + 1)}. {list(b.keys())[i]} {str(list(b.values())[i])} очков``\n'
             with open('clanAuthor.txt', 'r') as f:
@@ -224,7 +224,7 @@ async def DeleteClan(ctx, arg1):
                 SS[i] = int(SS[i])
             b = dict(zip(SS[0::2], SS[1::2]))
             b = {k: b[k] for k in sorted(b, key=b.get, reverse=True)}
-            msg = '```Лучшие кланы:```\n'
+            msg = '```Топ кланов:```\n'
             for i in range(int(len(SS)) // 2):
                 msg += f'``{str(i + 1)}. {list(b.keys())[i]} {str(list(b.values())[i])} очков``\n'
             with open('clanAuthor.txt', 'r') as f:
@@ -270,7 +270,7 @@ async def AddPoint(ctx, arg1:int, arg2):
                 SS[i] = int(SS[i])
             b = dict(zip(SS[0::2], SS[1::2]))
             b = {k: b[k] for k in sorted(b, key=b.get, reverse=True)}
-            msg = '```Лучшие кланы:```\n'
+            msg = '```Топ кланов:```\n'
             for i in range(int(len(SS)) // 2):
                 msg += f'``{str(i + 1)}. {list(b.keys())[i]} {str(list(b.values())[i])} очков``\n'
             await message.edit(content=msg)
@@ -319,7 +319,7 @@ async def AddClan(ctx, arg1):
                     SS[i] = int(SS[i])
                 b = dict(zip(SS[0::2], SS[1::2]))
                 b = {k: b[k] for k in sorted(b, key=b.get, reverse=True)}
-                msg = '```Лучшие кланы:```\n'
+                msg = '```Топ кланов:```\n'
                 for i in range(int(len(SS)) // 2):
                     msg += f'``{str(i + 1)}. {list(b.keys())[i]} {str(list(b.values())[i])} очков``\n'
                 await message.edit(content=msg)
@@ -342,7 +342,7 @@ async def CreateTable(ctx):
                 SS[i] = int(SS[i])
             b = dict(zip(SS[0::2], SS[1::2]))
             b = {k: b[k] for k in sorted(b, key=b.get, reverse=True)}
-            msg = '```Лучшие кланы:```\n'
+            msg = '```Топ кланов:```\n'
             for i in range(int(len(SS))//2):
                 msg += f'``{str(i + 1)}. {list(b.keys())[i]} {str(list(b.values())[i])} очков``\n'
             chnl = client.get_channel(CHNLMSG)
