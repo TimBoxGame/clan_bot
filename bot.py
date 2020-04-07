@@ -1,7 +1,7 @@
 from discord.ext import commands
 import os
 client = commands.Bot(command_prefix = '%')
-CHNLCMND = 697054436584849471
+CHNLCMND = 695252473509707846
 CHNLMSG = 697026084734238801
 CHNLINFO = 697025872124706916
 KodyId = 569461495407312902
@@ -353,4 +353,4 @@ async def CreateTable(ctx):
         else:
             await ctx.send('Вы не можете использовать эту команду')
 token = os.environ.get('token')
-client.run(token)
+client.run('Njk1NjMyNzU5MTE2NTI5Njk1.XoxdlQ.vmEIqBU9q_xSzd7DgJQszJzFXwk')
